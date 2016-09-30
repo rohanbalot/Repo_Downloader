@@ -25,6 +25,8 @@ for tag in list_tag:
 if(tags.string.strip()==y):
     urllib.request.urlretrieve('https://github.com/'+x.strip()+'/'+tags.string.strip()+'/archive/master.zip','repository.zip')
     print('The repository is successfully downloaded to your current default directory')
+    x=input()
 else:
     print("no such repository found")
+    x=input()
     
